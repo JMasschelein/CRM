@@ -1,0 +1,2 @@
+class FixedLabourCost < ApplicationRecord
+end

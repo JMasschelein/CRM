@@ -1,0 +1,2 @@
+class VariableServiceCost < ApplicationRecord
+end

@@ -1,0 +1,12 @@
+class CreateFixedProductionCosts < ActiveRecord::Migration[5.1]
+  def change
+    create_table :fixed_production_costs do |t|
+      t.string :title
+      t.text :description
+      t.decimal :amount
+      t.date :DateOrdered
+
+      t.timestamps
+    end
+  end
+end

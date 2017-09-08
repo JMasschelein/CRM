@@ -1,0 +1,2 @@
+class VariableLabourCost < ApplicationRecord
+end

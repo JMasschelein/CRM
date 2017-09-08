@@ -1,0 +1,2 @@
+class OfficeCost < ApplicationRecord
+end

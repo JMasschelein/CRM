@@ -1,0 +1,2 @@
+class FixedProductionCost < ApplicationRecord
+end
