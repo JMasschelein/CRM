@@ -1,6 +1,21 @@
 require 'random_data'
 
 
+
+ 10.times do
+
+   Company.create!(
+
+     name:  RandomData.random_sentence,
+     description:   RandomData.random_paragraph,
+     address: RandomData.random_sentence,
+     city: "Roeselare",
+     PostalCode: "8800",
+     country: "Canada"
+   )
+ end
+    companies = Company.all
+
  10.times do
 
    OfficeCost.create!(
@@ -94,6 +109,7 @@ require 'random_data'
 
  
 puts "Seed finished"
+puts "#{Company.count} Companies created"
 puts "#{OfficeCost.count} OfficeCosts created"
 puts "#{VariableProductionCost.count} VariableProductionCost created"
 puts "#{FixedProductionCost.count} FixedProductionCost created"
